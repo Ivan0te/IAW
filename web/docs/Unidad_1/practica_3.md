@@ -42,3 +42,11 @@
     mkdocs gh-deploy
     ```
     En nuestro GitHub nos creara una rama que se llamara gh-pages.
+    ![gh-pages](../images/ghpages.png)
+
+    De seguido, tendremos que ir a settings y a GitHub Pages y comprobamos que la URL que nos proporciona, funciona.
+    ![URL](../images/URL.png)
+
+    [Mi Pagina De GitHub.](https://ivan0te.github.io/IAW/)
+  
+    
