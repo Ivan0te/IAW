@@ -93,7 +93,7 @@ El contenido del archivo será el siguiente:
 <VirtualHost *:80>
     ServerName ivan0te.com
     DocumentRoot/var/www/html
-    Redirige alpuerto 443 (HTTPS)
+    #Redirige alpuerto 443 (HTTPS)
     RewriteEngineOn
     RewriteCond%{HTTPS} off
     RewriteRule^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
