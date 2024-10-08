@@ -819,7 +819,7 @@ sudo<span class="w"> </span>openssl<span class="w"> </span>req<span class="w"> <
 <div class="highlight"><pre><span></span><code>&lt;VirtualHost<span class="w"> </span>*:80&gt;
 <span class="w">    </span>ServerName<span class="w"> </span>ivan0te.com
 <span class="w">    </span>DocumentRoot/var/www/html
-<span class="w">    </span>Redirige<span class="w"> </span>alpuerto<span class="w"> </span><span class="m">443</span><span class="w"> </span><span class="o">(</span>HTTPS<span class="o">)</span>
+<span class="w">    </span><span class="c1">#Redirige alpuerto 443 (HTTPS)</span>
 <span class="w">    </span>RewriteEngineOn
 <span class="w">    </span>RewriteCond%<span class="o">{</span>HTTPS<span class="o">}</span><span class="w"> </span>off
 <span class="w">    </span>RewriteRule^<span class="w"> </span>https://%<span class="o">{</span>HTTP_HOST<span class="o">}</span>%<span class="o">{</span>REQUEST_URI<span class="o">}</span><span class="w"> </span><span class="o">[</span>L,R<span class="o">=</span><span class="m">301</span><span class="o">]</span>
