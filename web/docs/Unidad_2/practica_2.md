@@ -42,6 +42,27 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 ```
 [Descargar](../scripts/autossl.sh){ .md-button .md-button--primary }
 
+## 1.3 Configuración de un VirtualHost con SSL/TSL en el servidor web Apache.
+
+### Paso 1.
+
+Editamos el archivo de configuración del virtual host donde queremos habilitar el tráfico HTTPS.
+
+En nuestro caso, utilizaremos el archivo de configuración que tiene Apache por defecto para SSL/TLS, que está en la ruta:/etc/apache2/sites-available/default-ssl.conf.
+
+El contenido del archivo será el siguiente:
+
+```bash
+<VirtualHost *:443>
+    #ServerName practica-https.local
+    DocumentRoot/var/www/html
+    DirectoryIndex index.php index.html
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
+    SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
+</VirtualHost>
+```
+
 ### Paso 2.
 
 Habilitamos el virtual host que acabamos de configurar.
@@ -101,4 +122,4 @@ Una vez llegado a este punto, es necesario comprobar que el puerto 443 está abi
 
 ### Paso 8.
 
-Accede desde un navegador web al nombre de dominio que acabas de configurar. En nuesro caso será: https://ivan0te.com
+Accede desde un navegador web al nombre de dominio que acabas de configurar. En nuestro caso será: https://ivan0te.com
