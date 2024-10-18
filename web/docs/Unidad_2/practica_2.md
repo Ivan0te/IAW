@@ -1,4 +1,4 @@
-# Apache Práctica 2. Certificado SSL/TLS
+# Apache Certificado SSL/TLS
 
 !!! success "Objetivos de la práctica"
 
