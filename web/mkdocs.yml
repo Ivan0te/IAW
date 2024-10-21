@@ -53,4 +53,5 @@ nav:
 - Unidad 2 Implantación de aplicaciones web PHP :
     - "Práctica 1: Implantación de una web estática con Apache": Unidad_2/practica_1.md
     - "Práctica 2: Apache Certificado SSL/TLS": Unidad_2/practica_2.md
-    - "Práctica 3: Instalar, configurar y securizar phpMyAdmin": Unidad_2/practica_3.md
+    - "PHP Práctica 3: Instalar, configurar y securizar phpMyAdmin": Unidad_2/practica_3.md
+    - "PHP Práctica 4: Instalar y configurar WordPress": Unidad_2/practica_4.md
