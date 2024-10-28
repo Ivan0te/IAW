@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../practica_2/">
+        <link rel="prev" href="../practica_4/">
       
-      
-        <link rel="next" href="../practica_4/">
       
       
       <link rel="icon" href="../../images/logo.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>PHP Práctica 3: Instalar, configurar y securizar phpMyAdmin - IAW - 2ASIX</title>
+        <title>PHP Práctica 5: Balanceo de Carga con Apache - IAW - 2ASIX</title>
       
     
     
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-03-instalar-configurar-y-securizar-phpmyadmin" class="md-skip">
+        <a href="#ejemplo-de-configuracion-del-balanceador-de-carga" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PHP Práctica 3: Instalar, configurar y securizar phpMyAdmin
+              PHP Práctica 5: Balanceo de Carga con Apache
             
           </span>
         </div>
@@ -509,30 +507,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    PHP Práctica 3: Instalar, configurar y securizar phpMyAdmin
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../practica_3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,53 +519,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instalar-phpmyadmin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalar phpMyAdmin
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion-de-mysql" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuración de MYSQL
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asegurar-phpmyadmin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Asegurar PhpMyAdmin
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -618,10 +549,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../practica_5/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PHP Práctica 5: Balanceo de Carga con Apache
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -630,6 +579,96 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-configuracion-del-balanceador-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de configuración del Balanceador de Carga
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-paquetes-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualizar Paquetes del Sistema
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-el-primer-servidor-backend-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar el Primer Servidor Backend Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-el-segundo-servidor-backend-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar el Segundo Servidor Backend Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-el-balanceador-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar el Balanceador de Carga
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-la-politica-de-balanceo-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración de la Política de Balanceo de Carga
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-el-balanceo-de-carga-con-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar el Balanceo de Carga con Apache
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -659,8 +698,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -669,27 +706,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalar-phpmyadmin" class="md-nav__link">
+  <a href="#ejemplo-de-configuracion-del-balanceador-de-carga" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalar phpMyAdmin
+      Ejemplo de configuración del Balanceador de Carga
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuracion-de-mysql" class="md-nav__link">
+  <a href="#actualizar-paquetes-del-sistema" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuración de MYSQL
+      Actualizar Paquetes del Sistema
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#asegurar-phpmyadmin" class="md-nav__link">
+  <a href="#instalar-apache" class="md-nav__link">
     <span class="md-ellipsis">
-      Asegurar PhpMyAdmin
+      Instalar Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-el-primer-servidor-backend-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar el Primer Servidor Backend Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-el-segundo-servidor-backend-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar el Segundo Servidor Backend Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-el-balanceador-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar el Balanceador de Carga
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-la-politica-de-balanceo-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración de la Política de Balanceo de Carga
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-el-balanceo-de-carga-con-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar el Balanceo de Carga con Apache
     </span>
   </a>
   
@@ -710,135 +792,158 @@
                   
 
 
-<h1 id="practica-03-instalar-configurar-y-securizar-phpmyadmin">Practica 03: Instalar, configurar y securizar phpMyAdmin</h1>
-<h2 id="instalar-phpmyadmin">Instalar phpMyAdmin</h2>
-<ol>
-<li>
-<p>Para instalar phpMyAdmin, vamos a utilizar el paquete de instalación de Debian/Ubuntu:
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>phpmyadmin
-</code></pre></div></p>
-</li>
-<li>
-<p>Instalaremos las dependencias necesarias para phpMyAdmin:
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>php-mbstring<span class="w"> </span>php-xml<span class="w"> </span>php-zip<span class="w"> </span>php-gd<span class="w"> </span>php-curl<span class="w"> </span>php-json
-</code></pre></div></p>
-</li>
-<li>
-<p>Ahora, vamos a crear un usuario para phpMyAdmin:
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
-</code></pre></div></p>
-</li>
-<li>
-<p>Crearemos un usuario para phpMyAdmin:
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;php&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="n">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="p">;</span>
-<span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="o">*</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;php&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">GRANT</span><span class="w"> </span><span class="k">OPTION</span><span class="p">;</span>
-<span class="n">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>Habilitamos la extensión mbstring y reiniciamos el servicio de Apache:
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>phpenmod<span class="w"> </span>mbstring
-sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
-</code></pre></div></p>
-</li>
-</ol>
-<p><img alt="php" src="../../images/image1.png" /></p>
-<ol>
-<li>Automatización de la instalación de LAMP</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="c1"># Instalar PHP</span>
-sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span>-y<span class="w"> </span>
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>php<span class="w"> </span>libapache2-mod-php<span class="w"> </span>-y
+  <h1>PHP Práctica 5: Balanceo de Carga con Apache</h1>
 
-<span class="c1"># Paquetes Opcionales</span>
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>php-cli<span class="w"> </span>-y
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>php-cgi<span class="w"> </span>-y
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>php-mysql<span class="w"> </span>-y
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>php-pgsql<span class="w"> </span>-y
-
-<span class="c1"># Instalar phpmyadmin</span>
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>phpmyadmin<span class="w"> </span>php-mbstring<span class="w"> </span>php-zip<span class="w"> </span>php-gd<span class="w"> </span>php-json<span class="w"> </span>php-curl<span class="w"> </span>-y<span class="w">    </span>
-
-<span class="c1"># Acceder a MySQL para modificar configuración</span>
-sudo<span class="w"> </span>mysql<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;UNINSTALL COMPONENT &quot;file://component_validate_password&quot;;&#39;</span>
-
-<span class="c1"># Crear un nuevo usuario en MySQL con todos los privilegios</span>
-sudo<span class="w"> </span>mysql<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;CREATE USER &#39;php&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;root&#39;;&quot;</span>
-sudo<span class="w"> </span>mysql<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;GRANT ALL PRIVILEGES ON *.* TO &#39;php&#39;@&#39;localhost&#39; WITH GRANT OPTION;&quot;</span>
-sudo<span class="w"> </span>mysql<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;FLUSH PRIVILEGES;&quot;</span>
-
-<span class="c1"># Reiniciar servidor Apache</span>
-sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
-</code></pre></div>
-<p><a class="md-button md-button--primary" href="../../scripts/autophp.sh">Descargar</a></p>
-<h2 id="configuracion-de-mysql">Configuración de MYSQL</h2>
-<ol>
-<li>
-<p>Configuración del Acceso por Contraseña para la Cuenta Root de MySQL</p>
-<ol>
-<li>Cambia el método de autenticación del usuario root de MySQL.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">mysql</span><span class="w"> </span><span class="o">-</span><span class="n">u</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="o">-</span><span class="n">p</span>
-<span class="k">ALTER</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="n">IDENTIFIED</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="s1">&#39;caching_sha2_password&#39;</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;Root_pass1&#39;</span><span class="p">;</span>
-<span class="n">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
-</code></pre></div>
-<ol>
-<li>Verifica los métodos de autenticación empleados por cada uno de tus usuarios.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">user</span><span class="p">,</span><span class="n">authentication_string</span><span class="p">,</span><span class="n">plugin</span><span class="p">,</span><span class="k">host</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mysql</span><span class="p">.</span><span class="k">user</span><span class="p">;</span>
-</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Requisitos previos</p>
+<ul>
+<li>Tres servidores ejecutando un sistema operativo Ubuntu.</li>
+<li>Un usuario root o un usuario con privilegios sudo.</li>
+<li>Usaremos los siguientes dominios: <ul>
+<li>web1.iaw2425.com</li>
+<li>web2.iaw2425.com</li>
+<li>balancer.iaw2425.com</li>
+</ul>
 </li>
-</ol>
-<p><img alt="alt text" src="../../images/image-1.png" /></p>
-<ol>
-<li>
-<p>Configuración de la Contraseña de la Cuenta de Usuario de MySQL</p>
-<ol>
-<li>Crea una nueva cuenta de usuario con el nombre de usuario 'ivan' y la contraseña 'ivanphp'.</li>
-<li>Darle al nuevo usuario todos los privilegios de la cuenta root.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;ivan&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="n">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;ivanphp&#39;</span><span class="p">;</span>
-<span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="o">*</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;ivan&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">GRANT</span><span class="w"> </span><span class="k">OPTION</span><span class="p">;</span>
-<span class="n">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
+</ul>
+</div>
+<h2 id="ejemplo-de-configuracion-del-balanceador-de-carga">Ejemplo de configuración del Balanceador de Carga</h2>
+<p><img alt="alt text" src="../image-7.png" /></p>
+<h2 id="actualizar-paquetes-del-sistema">Actualizar Paquetes del Sistema</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
 </code></pre></div>
-<p><img alt="alt text" src="../../images/image-2.png" /></p>
-</li>
-</ol>
-<h2 id="asegurar-phpmyadmin">Asegurar PhpMyAdmin</h2>
-<ol>
-<li>
-<p>Habilitar sobrescritura de archivos .htaccess en el configuración de Apache y agregamos <strong>AllowOverride All</strong> en la sección <strong>Directory</strong> del archivo de configuración de Apache.</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/conf-available/phpmyadmin.conf
+<h2 id="instalar-apache">Instalar Apache</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>apache2
 </code></pre></div>
-<p><img alt="alt text" src="../../images/image-3.png" /></p>
-<p>Reiniciamos el servicio de Apache.</p>
+<h2 id="configurar-el-primer-servidor-backend-apache">Configurar el Primer Servidor Backend Apache</h2>
+<p>Crearemos una pagina HTML de muestra y un archivo de configuración del host virtual en el primer servidor Apache.</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/var/www/html/web1.html
+</code></pre></div>
+<p>Agregaremos el siguiente contenido:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Servidor Web Apache 1<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>¡Esta es la página del Servidor Web Apache 1!<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Guardamos y cerramos el archivo con Ctrl+O y Ctrl+X.</p>
+<p>Ahora, creamos el arhcivo de configuración del host virtual en el primer servidor Apache.</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/apache2/sites-enabled/web1.conf
+</code></pre></div>
+<p>Agregaremos el siguiente contenido:</p>
+<div class="highlight"><pre><span></span><code>&lt;VirtualHost<span class="w"> </span>*:80&gt;
+<span class="w">    </span>ServerName<span class="w"> </span>web1.iaw2425.com
+<span class="w">    </span>ServerAdmin<span class="w"> </span>webmaster@localhost
+<span class="w">    </span>DocumentRoot<span class="w"> </span>/var/www/html
+<span class="w">    </span>DirectoryIndex<span class="w"> </span>web1.html
+<span class="w">    </span>ErrorLog<span class="w"> </span><span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/error.log
+<span class="w">    </span>CustomLog<span class="w"> </span><span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/access.log<span class="w"> </span>combined
+&lt;/VirtualHost&gt;
+</code></pre></div>
+<p>Guardamos y cerramos el archivo con Ctrl+O y Ctrl+X.</p>
+<p>Ahora, reiniciamos el servicio Apache.</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
 </code></pre></div>
-</li>
-<li>
-<p>Crea un archivo .htaccess en el directorio de phpMyAdmin.</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/usr/share/phpmyadmin/.htaccess
+<p>Para comprobar que todo funciona correctamente, vamos a acceder a la URL web1.iaw2425.com.</p>
+<p><img alt="alt text" src="../image-8.png" /></p>
+<h2 id="configurar-el-segundo-servidor-backend-apache">Configurar el Segundo Servidor Backend Apache</h2>
+<p>Crearemos una pagina HTML de muestra y un archivo de configuración del host virtual en el segundo servidor Apache.</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/var/www/html/web2.html
 </code></pre></div>
-<p>Dentro de dicho archivo, agregamos las siguientes líneas de código:
-<div class="highlight"><pre><span></span><code>AuthType<span class="w"> </span>Basic
-AuthName<span class="w"> </span><span class="s2">&quot;Restricted Files&quot;</span>
-AuthUserFile<span class="w"> </span>/etc/phpmyadmin/.htpasswd
-Require<span class="w"> </span>valid-user
-</code></pre></div></p>
-</li>
-<li>
-<p>Crea un archivo .htpasswd para almacenar las credenciales de usuario y contraseña.</p>
-<div class="highlight"><pre><span></span><code><span class="w"> </span>sudo<span class="w"> </span>htpasswd<span class="w"> </span>-c<span class="w"> </span>/etc/phpmyadmin/.htpasswd<span class="w"> </span>ivanphp
+<p>Agregaremos el siguiente contenido:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Servidor Web Apache 2<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>¡Esta es la página del Servidor Web Apache 2!<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-<p><img alt="alt text" src="../../images/image-4.png" /></p>
-</li>
-<li>
-<p>Reiniciamos el servicio de Apache.</p>
-</li>
-</ol>
+<p>Guardamos y cerramos el archivo con Ctrl+O y Ctrl+X.</p>
+<p>Ahora, creamos el arhcivo de configuración del host virtual en el segundo servidor Apache.</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/apache2/sites-enabled/web2.conf
+</code></pre></div>
+<p>Agregaremos el siguiente contenido:</p>
+<div class="highlight"><pre><span></span><code>&lt;VirtualHost<span class="w"> </span>*:80&gt;
+<span class="w">    </span>ServerName<span class="w"> </span>web2.iaw2425.com
+<span class="w">    </span>ServerAdmin<span class="w"> </span>webmaster@localhost
+<span class="w">    </span>DocumentRoot<span class="w"> </span>/var/www/html
+<span class="w">    </span>DirectoryIndex<span class="w"> </span>web2.html
+<span class="w">    </span>ErrorLog<span class="w"> </span><span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/error.log
+<span class="w">    </span>CustomLog<span class="w"> </span><span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/access.log<span class="w"> </span>combined
+&lt;/VirtualHost&gt;
+</code></pre></div>
+<p>Guardamos y cerramos el archivo con Ctrl+O y Ctrl+X.</p>
+<p>Ahora, reiniciamos el servicio Apache.</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
 </code></pre></div>
-<p><img alt="alt text" src="../../images/image-5.png" /></p>
+<p>Para comprobar que todo funciona correctamente, vamos a acceder a la URL web2.iaw2425.com.</p>
+<p><img alt="alt text" src="../image-9.png" /></p>
+<h2 id="configurar-el-balanceador-de-carga">Configurar el Balanceador de Carga</h2>
+<p>Configuraremos el tercer servidor como un servidor de balanceo de carga para redirigir todo el tráfico a los servidores web.</p>
+<p>Tendremos que habilitar los módulos proxy en el servidor de balanceo de carga:</p>
+<div class="highlight"><pre><span></span><code>a2enmod<span class="w"> </span>proxy
+a2enmod<span class="w"> </span>proxy_http
+a2enmod<span class="w"> </span>proxy_balancer
+a2enmod<span class="w"> </span>lbmethod_byrequests
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Módulos de Apache</p>
+<ul>
+<li>proxy: Permite el uso de proxys en Apache.</li>
+<li>proxy_http: Permite el uso de proxys en Apache.</li>
+<li>proxy_balancer: Permite el uso de balanceadores de carga en Apache.</li>
+<li>lbmethod_byrequests: Permite el uso de métodos de balanceo de carga en Apache.</li>
+</ul>
+</div>
+<p>Reiniciamos el servicio Apache.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
+<p>Verificamos todos los módulos de Apache.</p>
+<div class="highlight"><pre><span></span><code>apachectl<span class="w"> </span>-M<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>proxy
+</code></pre></div>
+<p><img alt="alt text" src="../image-10.png" /></p>
+<p>Creamos el archivo de configuración del balanceador de carga.</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/apache2/sites-enabled/balancer.conf
+</code></pre></div>
+<p>Agregaremos el siguiente contenido:</p>
+<p>```bash<VirtualHost *:80>
+    ServerName balancer.iaw2425.com
+    <Proxy balancer://webserver>
+        # servidor 1
+        BalancerMember http://web1.iaw2425.com
+        #BalancerMember http://IP_HTTP_SERVER_1:80</p>
+<pre><code>    #servidor 2
+    BalancerMember http://web2.iaw2425.com
+    #BalancerMember http://IP_HTTP_SERVER_1:80
+
+    ProxySet stickysession=ROUTEID
+&lt;/Proxy&gt;
+ProxyPreserveHost On
+ProxyPass / balancer://webserver/
+ProxyPassReverse / balancer://webserver/
+</code></pre>
+<p></VirtualHost>
+<code>Guardamos y cerramos el archivo con Ctrl+O y Ctrl+X.
+
+Ahora, reiniciamos el servicio Apache.</code>bash
+sudo systemctl restart apache2
+```</p>
+<p>Para comprobar que todo funciona correctamente, vamos a acceder a la URL balancer.iaw2425.com.</p>
+<p><img alt="alt text" src="../image-11.png" /></p>
+<h2 id="configuracion-de-la-politica-de-balanceo-de-carga">Configuración de la Política de Balanceo de Carga</h2>
+<p>Para configurar la política de balanceo de carga es necesario tener activado previamente el módulo proxy_balancer en el servidor de balanceo de carga.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>a2enmod<span class="w"> </span>proxy_balancer
+</code></pre></div>
+<p>Creamos el archivo de configuración de la política de balanceo de carga.</p>
+<p>El balanceo de carga que voy a utilizar es el Round Robin.</p>
+<p>Para poder activar este método de balanceo tenemos que activar el módulo lbmethod_byrequests.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>a2enmod<span class="w"> </span>lbmethod_byrequests
+</code></pre></div>
+<p>Este método de balanceo también permite distribuir las peticiones entre los servidores en función de los parámetros lbfactor y lbstatus.</p>
+<p>Ahora reiniciamos el servicio Apache.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
+<h2 id="verificar-el-balanceo-de-carga-con-apache">Verificar el Balanceo de Carga con Apache</h2>
+<p><img alt="alt text" src="../image-12.png" />
+<img alt="alt text" src="../image-13.png" /></p>
 
 
 
