@@ -55,3 +55,4 @@ nav:
     - "Práctica 2: Apache Certificado SSL/TLS": Unidad_2/practica_2.md
     - "PHP Práctica 3: Instalar, configurar y securizar phpMyAdmin": Unidad_2/practica_3.md
     - "PHP Práctica 4: Instalar y configurar WordPress": Unidad_2/practica_4.md
+    - "PHP Práctica 5: Balanceo de Carga con Apache": Unidad_2/practica_5.md
