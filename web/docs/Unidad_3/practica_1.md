@@ -51,7 +51,7 @@
   - Mostrar un mensaje indicando si se guardó correctamente.
   - Leer y mostrar el contenido del archivo con `file_get_contents()`.
 
-[Descargar formulario-b.php](./project/formulario.php){ .md-button .md-button--primary }
+[Descargar formulario-b.php](./project/formulario-b.php){ .md-button .md-button--primary }
 [Descargar procesar_fichero.php](./project/procesar_fichero.php){ .md-button .md-button--primary }
 
 ---
