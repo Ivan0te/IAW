@@ -8,14 +8,14 @@
 - **Procesamiento:** Los datos se procesan en la misma página usando `$_POST`.
 - **Salida:** Mostrar los datos ingresados si todos los campos son válidos.
 
-[Descargar]()
+[Descargar](){ .md-button .md-button--primary }
 
 ### 2. Selección de género
 - **Descripción:** Añadir opción para seleccionar el género de la persona.
 - **Campos:** `Masculino`, `Femenino`, `Otro` (usando radio buttons).
 - **Salida:** Mostrar el género seleccionado junto con los otros datos.
 
-[Descargar]()
+[Descargar](){ .md-button .md-button--primary }
 
 ### 3. Selección de idiomas
 - **Descripción:** Añadir casillas de verificación para seleccionar idiomas que habla la persona.
@@ -24,7 +24,7 @@
   - Si selecciona idiomas: Mostrar un mensaje de bienvenida en los idiomas seleccionados.
   - Si no selecciona idiomas: Mostrar un mensaje indicando que no seleccionó ninguno.
 
-[Descargar]()
+[Descargar](){ .md-button .md-button--primary }
 
 ---
 
@@ -38,7 +38,7 @@
     - **POST:** Los datos no son visibles en la URL.
     - **GET:** Los datos aparecen en la URL, lo cual puede ser menos seguro.
 
-[Descargar]()
+[Descargar](){ .md-button .md-button--primary }
 
 ---
 
@@ -50,7 +50,7 @@
   - Mostrar un mensaje indicando si se guardó correctamente.
   - Leer y mostrar el contenido del archivo con `file_get_contents()`.
 
-[Descargar]()
+[Descargar](){ .md-button .md-button--primary }
 
 ---
 
@@ -60,18 +60,18 @@
    - Guardar la imagen en el servidor.
    - Mostrarla con una etiqueta `<img>`.
 
-[Descargar]()
+[Descargar](){ .md-button .md-button--primary }
 
 2. **Subir y mostrar varios archivos de texto:**
    - Permitir múltiples selecciones.
    - Mostrar el contenido de todos los archivos.
 
-[Descargar]()
+[Descargar](){ .md-button .md-button--primary }
 
 3. **Subir y mostrar una imagen y un archivo de texto:**
    - Selección combinada de imagen y texto.
    - Mostrar ambos en la página.
 
-[Descargar]()
+[Descargar](){ .md-button .md-button--primary }
 
 ---
