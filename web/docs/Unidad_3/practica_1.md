@@ -8,14 +8,14 @@
 - **Procesamiento:** Los datos se procesan en la misma página usando `$_POST`.
 - **Salida:** Mostrar los datos ingresados si todos los campos son válidos.
 
-[Descargar](formularioB.php){ .md-button .md-button--primary }
+[Descargar](FormPract1/formularioB.php){ .md-button .md-button--primary }
 
 ### 2. Selección de género
 - **Descripción:** Añadir opción para seleccionar el género de la persona.
 - **Campos:** `Masculino`, `Femenino`, `Otro` (usando radio buttons).
 - **Salida:** Mostrar el género seleccionado junto con los otros datos.
 
-[Descargar](formularioG.php){ .md-button .md-button--primary }
+[Descargar](FormPract1/formularioG.php){ .md-button .md-button--primary }
 
 ### 3. Selección de idiomas
 - **Descripción:** Añadir casillas de verificación para seleccionar idiomas que habla la persona.
@@ -24,7 +24,7 @@
   - Si selecciona idiomas: Mostrar un mensaje de bienvenida en los idiomas seleccionados.
   - Si no selecciona idiomas: Mostrar un mensaje indicando que no seleccionó ninguno.
 
-[Descargar](formulario.php){ .md-button .md-button--primary }
+[Descargar](FormPract1/formulario.php){ .md-button .md-button--primary }
 
 ---
 
@@ -38,8 +38,8 @@
     - **POST:** Los datos no son visibles en la URL.
     - **GET:** Los datos aparecen en la URL, lo cual puede ser menos seguro.
 
-[Descargar index.php](index.php){ .md-button .md-button--primary }
-[Descargar procesar.php](procesar.php){ .md-button .md-button--primary }
+[Descargar index.php](FormPract1/index.php){ .md-button .md-button--primary }
+[Descargar procesar.php](FormPract1/procesar.php){ .md-button .md-button--primary }
 
 ---
 
