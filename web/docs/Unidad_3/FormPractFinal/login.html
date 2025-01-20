@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <form method="POST" action="login.php">
+            <label for="nombre_usuario">Nombre de usuario:</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <label for="captcha">Código CAPTCHA:</label>
+            <img src="captcha.php" alt="CAPTCHA">
+            <input type="text" id="captcha" name="captcha" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <p>¿No tienes una cuenta? <a href="registro.html"><button>Registrarse</button></a></p>
+    </div>
+
+    <a href="logout.php">Cerrar sesión</a>
+
+</body>
+</html>
